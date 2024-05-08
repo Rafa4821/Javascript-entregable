@@ -1,5 +1,5 @@
 
-const words = ['gato', 'perro', 'casa', 'pelota', 'pajaro','fruta', 'peluche'];
+const words = ['gato', 'perro', 'casa', 'pelota', 'pajaro', 'fruta', 'peluche'];
 let chosenWord = '';
 let guessedLetters = [];
 let attemptsLeft = 6;
@@ -18,6 +18,8 @@ const wordContainer = document.getElementById('word-container');
 const lettersContainer = document.getElementById('letters-container');
 const startBtn = document.getElementById('start-btn');
 const hangmanImg = document.getElementById('hangman-img');
+
+startBtn.addEventListener('click', initializeGame);
 
 function initializeGame() {
   chosenWord = words[Math.floor(Math.random() * words.length)];
@@ -71,5 +73,3 @@ function checkGameStatus() {
   }
 }
 
-startBtn.addEventListener('click', initializeGame);
-initializeGame();
