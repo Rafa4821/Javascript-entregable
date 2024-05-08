@@ -1,5 +1,5 @@
 
-const words = ['javascript', 'html', 'funcion', 'programacion', 'web', 'github'];
+const words = ['gato', 'perro', 'casa', 'pelota', 'pajaro','fruta', 'peluche'];
 let chosenWord = '';
 let guessedLetters = [];
 let attemptsLeft = 6;
